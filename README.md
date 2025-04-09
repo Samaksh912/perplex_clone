@@ -1,16 +1,64 @@
-# untitled2
+# Perplex Clone 🧠🔍
 
-A new Flutter project.
+A clone of the Perplex AI chatbot with integrated search and modern UI.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- 💬 Chat with AI (LLM integration)
+- 🌐 Web search results included in responses
+- 📱 Flutter-based frontend
+- ⚡ FastAPI backend for handling requests
+- 🔐 Environment variable support via `.env`
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Frontend**: Flutter
+- **Backend**: Python + FastAPI
+- **Others**: Firebase (optional), GitHub, REST APIs
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📦 Getting Started
+
+### 🔧 Backend Setup (FastAPI)
+
+```bash
+cd server
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+Create a `.env` file in the `server/` directory:
+
+```env
+API_KEY=your_api_key_here
+```
+
+> Make sure `.env` and `server/venv/` are excluded (already in `.gitignore`).
+
+---
+
+### 💻 Frontend Setup (Flutter)
+
+```bash
+cd frontend
+flutter pub get
+flutter run
+```
+
+## 📁 Project Structure
+
+```
+.
+├── frontend/              # Flutter code
+├── server/                # FastAPI backend
+│   ├── main.py
+│   ├── .env
+│   └── requirements.txt
+└── README.md
+```
+
+## 🔒 Git Setup Notes
+
+- `.env` is excluded in `.gitignore`
+- `server/venv/` is excluded
+- Avoid pushing large files like model weights or DLLs
+
