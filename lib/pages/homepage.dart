@@ -11,12 +11,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  bool isFactCheckerSelected  = false;
+
 
 
   @override
   void initState() {
     super.initState();
-    ChatWebService().connect();
+
   }
 
   @override
@@ -37,7 +39,7 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     mainAxisSize: MainAxisSize.min, // 🔹 Prevents layout issues
                     children: [
-                      search(),
+                      Search(),
 
                       const SizedBox(height: 20), // 🔹 Spacer to avoid UI squeezing
                     ],

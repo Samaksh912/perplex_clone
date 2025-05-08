@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:untitled2/pages/chatpage.dart';
+import 'package:untitled2/pages/factpage.dart';
 import 'package:untitled2/pages/homepage.dart';
 import 'package:untitled2/tools/colors.dart';
 
